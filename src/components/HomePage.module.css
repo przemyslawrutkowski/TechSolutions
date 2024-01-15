@@ -1,0 +1,44 @@
+.introduction-text {
+    font-weight: bold;
+    color: #03045E;
+}
+
+.sub-text {
+    font-weight: lighter;
+    color: #343a40;
+}
+
+.main-img {
+    height: 600px;
+    width: 600px;
+}
+
+@media (max-width: 650px) {
+    .main-img {
+        height: 400px;
+        width: 400px;
+    }
+}
+
+@media (min-width: 0px) {
+    .introduction-text {
+        font-size: 2.2rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .introduction-text {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .introduction-text {
+        font-size: 3rem;
+    }
+
+    .sub-text,
+    button.custom-button {
+        font-size: 1.1rem;
+    }
+}

@@ -1,0 +1,42 @@
+.footer-column {
+    text-align: start;
+    margin: 0 0 2rem 0;
+}
+
+.footer-column h4 {
+    font-size: 1.5rem;
+    color: #03045E;
+    margin: 0 0 1rem 0;
+}
+
+.footer-column p,
+.footer-column a,
+.footer-column li {
+    font-size: 0.9rem;
+    color: #343a40;
+    margin: 0 0 1rem 0;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column a {
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-column a:hover {
+    color: #03045E;
+}
+
+.footer-column p span {
+    font-weight: bold;
+}
+
+.custom-image {
+    height: 2rem;
+    width: 2rem;
+}
