@@ -1,3 +1,6 @@
+import React from 'react';
+import { useAuth } from './AuthContext';
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -7,6 +10,13 @@ import Form from 'react-bootstrap/Form';
 import styles from './LoginPage.module.css';
 
 export default function LoginPage() {
+    const { isLoggedIn, setIsLoggedIn } = useAuth();
+
+    const handleSignIn = async (event) => {
+        event.preventDefault();
+        setIsLoggedIn(true);
+    };
+
     return (
         <Container fluid className="d-flex justify-content-center align-items-center flex-grow-1 flex-shrink-1">
             <Row>
@@ -14,7 +24,7 @@ export default function LoginPage() {
                     <h2 className={`${styles['section-header']} text-center`}>
                         Sign In
                     </h2>
-                    <Form className={styles['login-form']}>
+                    <Form className={styles['login-form']} onSubmit={handleSignIn}>
                         <Form.Group className={`mb-3 ${styles['form-group']}`} controlId="formBasicEmail">
                             <Form.Label>Email address</Form.Label>
                             <Form.Control type="email" placeholder="Enter email" />
