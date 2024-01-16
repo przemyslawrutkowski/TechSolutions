@@ -20,22 +20,22 @@ export default function AboutUsPage() {
                     </Col>
                     <Col xs={{ span: 12, order: 1 }} xl={{ span: 6, order: 1 }} className="d-flex flex-column justify-content-center align-items-center">
                         <div>
-                            <h2 className={`${styles['section-header']} ${styles['text-start']}`}>
+                            <h2 className={`${styles['section-header']} text-start`}>
                                 About Us
                             </h2>
-                            <p className={`${styles['section-desc']} ${styles['text-start']}`}>
+                            <p className={`${styles['section-desc']} text-start`}>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquid repellendus esse accusantium et explicabo assumenda est inventore quis quod! Earum asperiores perspiciatis vero sit architecto eius autem quas fuga.
                             </p>
-                            <p className={`${styles['section-desc']} ${styles['text-start']}`}>
+                            <p className={`${styles['section-desc']} text-start`}>
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum explicabo consequatur culpa perferendis ad fuga animi, totam qui similique? Inventore molestias labore quasi tenetur saepe qui officia? Error, iure quae!
                             </p>
-                            <p className={`${styles['section-desc']} ${styles['text-start']}`}>
+                            <p className={`${styles['section-desc']} text-start`}>
                                 <FontAwesomeIcon icon={faCheck} size="1x" style={{ color: "#03045E" }} /> test
                             </p>
-                            <p className={`${styles['section-desc']} ${styles['text-start']}`}>
+                            <p className={`${styles['section-desc']} text-start`}>
                                 <FontAwesomeIcon icon={faCheck} size="1x" style={{ color: "#03045E" }} /> test
                             </p>
-                            <p className={`${styles['section-desc']} ${styles['text-start']}`}>
+                            <p className={`${styles['section-desc']} text-start`}>
                                 <FontAwesomeIcon icon={faCheck} size="1x" style={{ color: "#03045E" }} /> test
                             </p>
 

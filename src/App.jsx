@@ -1,24 +1,26 @@
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import CustomNavbar from './components/CustomNavbar';
-import HomePage from './components/HomePage';
-import WhyUsPage from './components/WhyUsPage';
-import AboutUsPage from './components/AboutUsPage';
-import ServicesPage from './components/ServicesPage';
-import TestimonialsPage from './components/TestimonialsPage';
+import LandingPage from './components/LandingPage';
+import ContactPage from './components/ContactPage';
+import LoginPage from './components/LoginPage';
+import RegistrationPage from './components/RegistrationPage';
 import Footer from './components/Footer';
 
 function App() {
   return (
-    <>
+    <div className="app-container">
       <CustomNavbar />
-      <HomePage />
-      <WhyUsPage />
-      <AboutUsPage />
-      <ServicesPage />
-      <TestimonialsPage />
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<RegistrationPage />} />
+      </Routes>
       <Footer />
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
