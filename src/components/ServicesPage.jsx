@@ -15,7 +15,7 @@ import styles from './ServicesPage.module.css'
 export default function ServicesPage() {
     return (
         <>
-            <Container fluid className="d-flex flex-column justify-content-center align-items-center overflow-hidden">
+            <Container fluid className="mt-5 mb-5 d-flex flex-column justify-content-center align-items-center overflow-hidden">
                 <Row>
                     <Col className="text-center">
                         <h2 className={`${styles['section-header']}`}>Most Popular Services</h2>

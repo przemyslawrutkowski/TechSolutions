@@ -22,7 +22,7 @@ export default function LoginPage() {
     };
 
     return (
-        <Container fluid className="d-flex justify-content-center align-items-center flex-grow-1 flex-shrink-1">
+        <Container fluid className="mt-5 mb-5 d-flex justify-content-center align-items-center flex-grow-1 flex-shrink-1 overflow-hidden">
             <Row>
                 <Col>
                     <h2 className={`${styles['section-header']} text-center`}>

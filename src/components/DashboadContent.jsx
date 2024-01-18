@@ -10,7 +10,7 @@ import styles from './DashboardContent.module.css'
 
 const DashboardContent = () => {
     return (
-        <div className={styles.mainContent}>
+        <div className={`${styles.mainContent} overflow-hidden`}>
             <Routes>
                 <Route path="orders" element={<Orders />} />
                 <Route path="details" element={<Account />} />

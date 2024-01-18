@@ -2,8 +2,9 @@
     background-color: #03045E;
     position: relative;
     padding: 40px;
-    height: 500px;
-    max-height: 500px;
+    height: 550px;
+    max-height: 550px;
+    min-width: 168px;
     border-radius: 1rem;
     z-index: 999;
 }
@@ -69,7 +70,7 @@
     }
 
     .sideNavbar {
-        width: 80%;
+        width: 90%;
         height: auto;
         padding: 10px;
         border-radius: 1rem;

@@ -41,14 +41,14 @@ export default function TestimonialsPage() {
     };
 
     return (
-        <Container fluid className="d-flex flex-column justify-content-center align-items-center overflow-hidden">
+        <Container fluid className="mt-5 mb-5 d-flex flex-column justify-content-center align-items-center overflow-hidden">
             <Row>
                 <Col className="text-center">
                     <h2 className={`${styles['section-header']}`}>Testimonials</h2>
                     <p className={`${styles['section-desc']}`}>Read what our satisfied customers have to say about their experiences with our services. We take pride in delivering top-notch solutions and ensuring customer satisfaction.</p>
                 </Col>
             </Row>
-            <Row className={`${styles['testimonials-page']}`}>
+            <Row>
                 <Col className={`${styles['testimonial']}`}>
                     <div className={`${styles['image-container']}`}>
                         <Image src={testimonialsData[currentTestimonialIndex].image} className={`${styles['custom-image']}`} alt="Client Photo" />

@@ -5,7 +5,7 @@ import styles from './Account.module.css';
 
 export default function Account() {
     return (
-        <Container>
+        <Container className="overflow-hidden">
             <Row>
                 <Col xs={12} md={6}>
                     <h3>Account Details</h3>
@@ -49,7 +49,7 @@ export default function Account() {
                             </p>
                             <p><b>Phone Number:</b> 997</p>
                             <p><b>Email Adress:</b> test@gmail.com</p>
-                            <Link to="/">Edit Adress</Link>
+                            <Link to="/">Edit Address Details</Link>
                         </Card.Body>
                     </Card>
                 </Col>

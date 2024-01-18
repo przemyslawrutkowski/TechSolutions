@@ -6,9 +6,11 @@ import styles from './DashboardPage.module.css';
 
 export default function DashboardPage() {
     return (
-        <div className={styles.dashboardContainer}>
-            <SideNavbar />
-            <DashboardContent />
+        <div className={`mt-5 mb-5 ${styles.pageContainer} overflow-hidden`}>
+            <div className={styles.dashboardContainer}>
+                <SideNavbar />
+                <DashboardContent />
+            </div>
         </div>
     );
 }

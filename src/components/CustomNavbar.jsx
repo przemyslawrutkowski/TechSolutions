@@ -45,7 +45,7 @@ const CustomNavbar = () => {
     };
 
     return (
-        <nav className={styles.navbar}>
+        <nav className={`${styles.navbar}`}>
             <div className={styles.navbarContainer}>
                 <label className={styles.logo}>TechSolutions</label>
                 <div className={styles.mobileMenuIcon} onClick={toggleMenu}>
@@ -69,7 +69,7 @@ const CustomNavbar = () => {
                     {isLoggedIn ? (
                         <>
                             <li>
-                                <Link to="/dashboard" onClick={() => { handleMenuItemClick() }} className={`${styles.customLink} ${activeSection === "dashboard" ? styles.active : ""}`}>Dashboard</Link>
+                                <Link to="/dashboard/orders" onClick={() => { handleMenuItemClick() }} className={`${styles.customLink} ${activeSection === "dashboard" ? styles.active : ""}`}>Dashboard</Link>
                             </li>
                             <li>
                                 <Link to="/login" onClick={() => { handleLogout(); handleMenuItemClick() }} className={`${styles.customLink}`}>Log out</Link>

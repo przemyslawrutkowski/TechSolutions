@@ -13,7 +13,7 @@ import Squad from '../assets/squad.webp'
 export default function AboutUsPage() {
     return (
         <>
-            <Container fluid className="d-flex justify-content-center align-items-center overflow-hidden">
+            <Container fluid className="mt-5 mb-5 d-flex justify-content-center align-items-center overflow-hidden">
                 <Row className="gx-5">
                     <Col xs={{ span: 12, order: 0 }} xl={{ span: 6, order: 0 }} className="d-flex justify-content-center align-items-center">
                         <Image src={Squad} alt="squad image" className={`${styles['main-img']}`} roundedCircle />

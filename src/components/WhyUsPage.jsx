@@ -11,7 +11,7 @@ import styles from './WhyUsPage.module.css';
 
 export default function WhyUsPage() {
     return (
-        <Container fluid className="d-flex flex-column justify-content-center align-items-center overflow-hidden">
+        <Container fluid className="mt-5 mb-5 d-flex flex-column justify-content-center align-items-center overflow-hidden">
             <Row>
                 <Col className="text-center">
                     <h2 className={`${styles['section-header']}`}>Our Features</h2>

@@ -24,7 +24,7 @@ export default function SideNavbar() {
     };
 
     return (
-        <div className={styles.sideNavbar}>
+        <div className={`${styles.sideNavbar}`}>
             <div className={styles.sideNavbarContainer}>
                 <div className={styles.mobileMenuIcon} onClick={toggleMenu}>
                     <div className={styles.bar}></div>
