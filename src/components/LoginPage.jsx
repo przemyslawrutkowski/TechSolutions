@@ -8,13 +8,17 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
 import styles from './LoginPage.module.css';
+import { useNavigate } from 'react-router-dom';
 
 export default function LoginPage() {
     const { isLoggedIn, setIsLoggedIn } = useAuth();
 
+    const navigate = useNavigate();
+
     const handleSignIn = async (event) => {
         event.preventDefault();
         setIsLoggedIn(true);
+        navigate('/dashboard/orders')
     };
 
     return (
@@ -24,7 +28,7 @@ export default function LoginPage() {
                     <h2 className={`${styles['section-header']} text-center`}>
                         Sign In
                     </h2>
-                    <Form className={styles['login-form']} onSubmit={handleSignIn}>
+                    <Form className={styles['login-form']}>
                         <Form.Group className={`mb-3 ${styles['form-group']}`} controlId="formBasicEmail">
                             <Form.Label>Email address</Form.Label>
                             <Form.Control type="email" placeholder="Enter email" />
@@ -47,7 +51,7 @@ export default function LoginPage() {
                         </Form.Group>
 
                         <div className="d-flex justify-content-center align-items-center mb-3">
-                            <Button variant="primary" type="submit" className={`${styles['custom-button']}`}>
+                            <Button variant="primary" type="submit" className={`${styles['custom-button']}`} onClick={handleSignIn}>
                                 Sign In
                             </Button>
                         </div>

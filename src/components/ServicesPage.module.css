@@ -5,7 +5,9 @@
     overflow: hidden;
     margin: 15px 30px 15px 30px;
     width: 300px;
-    height: auto;
+    height: 450px;
+    margin: 1rem;
+    padding: 0;
 }
 
 .custom-image {
@@ -28,16 +30,10 @@
     margin-bottom: 20px;
 }
 
-.custom-card-text,
-.custom-subheader {
-    font-weight: lighter;
-}
-
 .section-header {
     font-weight: bold;
     color: #03045E;
 }
-
 
 @media (min-width: 0px) {
     .section-header {
@@ -45,19 +41,13 @@
     }
 }
 
-@media (min-width: 576px) {
-    .section-header {
-        font-size: 2.5rem;
-    }
-}
-
 @media (min-width: 1200px) {
     .section-header {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .custom-card-text,
     .custom-subheader {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 }
