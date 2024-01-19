@@ -44,7 +44,7 @@ export default function Orders() {
         <Container className="overflow-hidden">
             <Row>
                 <Col xs={12}>
-                    <h3>My Orders({ordersData.length})</h3>
+                    <h3 className={styles.sectionHeader}>My Orders({ordersData.length})</h3>
                 </Col>
                 {ordersData.map((order) => (
                     <Col xs={12} md={6} key={order.id}>
@@ -55,7 +55,7 @@ export default function Orders() {
                                 <p><b>Status:</b> {order.status}</p>
                                 <p><b>Total:</b> ${order.total.toFixed(2)}</p>
                                 <p><b>Title:</b> {order.title}</p>
-                                <Link to="/">Order Details</Link>
+                                <Link to="/" className={styles.link}>Order Details</Link>
                             </Card.Body>
                         </Card>
                     </Col>

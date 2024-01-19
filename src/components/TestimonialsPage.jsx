@@ -41,7 +41,7 @@ export default function TestimonialsPage() {
     };
 
     return (
-        <Container fluid className="mt-5 mb-5 d-flex flex-column justify-content-center align-items-center overflow-hidden">
+        <Container fluid className="mt-5 mb-5 d-flex flex-column justify-content-center align-items-center">
             <Row>
                 <Col className="text-center">
                     <h2 className={`${styles['section-header']}`}>Testimonials</h2>

@@ -62,7 +62,7 @@ export default function Opinions() {
         <Container className="overflow-hidden">
             <Row>
                 <Col xs={12}>
-                    <h3>My Opinions({opinionsData.length})</h3>
+                    <h3 className={styles.sectionHeader}>My Opinions({opinionsData.length})</h3>
                 </Col>
             </Row>
             {opinionsData.map(opinion => (

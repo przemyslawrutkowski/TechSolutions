@@ -4,7 +4,7 @@ export default function TechnicalSupport() {
     return (
         <div className={styles.chatContainer}>
             <div className={styles.chatHeader}>
-                <h2>Chat</h2>
+                <h3 className={styles.sectionHeader}>Chat</h3>
             </div>
             <div className={styles.chatMessages}>
                 <div className={styles.message}>

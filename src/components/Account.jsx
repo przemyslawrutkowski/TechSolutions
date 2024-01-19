@@ -8,18 +8,18 @@ export default function Account() {
         <Container className="overflow-hidden">
             <Row>
                 <Col xs={12} md={6}>
-                    <h3>Account Details</h3>
+                    <h3 className={styles.sectionHeader}>Account Details</h3>
                     <Card>
                         <Card.Body>
                             <p><b>Email Adress:</b> test@gmail.com</p>
                             <p><b>Full Name:</b> Janusz Kiep</p>
                             <p><b>Phone Number:</b> 997</p>
-                            <Link to="/">Edit Details</Link>
+                            <Link to="/" className={styles.link}>Edit Details</Link>
                         </Card.Body>
                     </Card>
                 </Col>
                 <Col xs={12} md={6}>
-                    <h3>Change Password</h3>
+                    <h3 className={styles.sectionHeader}>Change Password</h3>
                     <Card>
                         <Card.Body>
                             <Form>
@@ -39,7 +39,7 @@ export default function Account() {
                     </Card>
                 </Col>
                 <Col xs={12} md={12}>
-                    <h3>Delivery Address</h3>
+                    <h3 className={styles.sectionHeader}>Delivery Address</h3>
                     <Card>
                         <Card.Body>
                             <p><b>Full Name:</b> Janusz Kiep</p>
@@ -49,7 +49,7 @@ export default function Account() {
                             </p>
                             <p><b>Phone Number:</b> 997</p>
                             <p><b>Email Adress:</b> test@gmail.com</p>
-                            <Link to="/">Edit Address Details</Link>
+                            <Link to="/" className={styles.link}>Edit Address Details</Link>
                         </Card.Body>
                     </Card>
                 </Col>

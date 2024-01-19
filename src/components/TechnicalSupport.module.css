@@ -46,10 +46,15 @@
 
     button {
         padding: 8px;
-        background-color: #4caf50;
+        background-color: #03045E;
         color: #fff;
         border: none;
         border-radius: 4px;
         cursor: pointer;
     }
+}
+
+.sectionHeader {
+    font-weight: bold;
+    color: #03045E;
 }
