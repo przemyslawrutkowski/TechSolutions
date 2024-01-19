@@ -1,6 +1,7 @@
-import React from 'react';
-import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Container, Row, Col, Card, Button, Modal, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Rating from './Rating';
 
 import styles from './Orders.module.css'
 
@@ -40,9 +41,14 @@ const ordersData = [
 ];
 
 export default function Orders() {
+    const [showReviewModal, setShowReviewModal] = useState(false);
+
+    const handleShowReviewModal = () => setShowReviewModal(true);
+    const handleCloseReviewModal = () => setShowReviewModal(false);
+
     return (
         <Container className="overflow-hidden">
-            <Row>
+            <Row className="g-3">
                 <Col xs={12}>
                     <h3 className={styles.sectionHeader}>My Orders({ordersData.length})</h3>
                 </Col>
@@ -52,15 +58,57 @@ export default function Orders() {
                             <Card.Body>
                                 <p><b>Order Number:</b> {order.orderNumber}</p>
                                 <p><b>Date:</b> {order.date}</p>
-                                <p><b>Status:</b> {order.status}</p>
-                                <p><b>Total:</b> ${order.total.toFixed(2)}</p>
+                                <p>
+                                    <b>Status:</b>{' '}
+                                    <span className={getStatusLabelStyle(order.status)}>
+                                        {order.status}
+                                    </span>
+                                </p>
                                 <p><b>Title:</b> {order.title}</p>
-                                <Link to="/" className={styles.link}>Order Details</Link>
+                                <div className={styles.linksContainer}>
+                                    <Link to={`order-details/${order.orderNumber}`} className={styles.link}>Order Details</Link>
+                                    <Link className={styles.link} onClick={handleShowReviewModal}>Add a Review</Link>
+                                </div>
                             </Card.Body>
                         </Card>
                     </Col>
                 ))}
             </Row>
+            <Modal show={showReviewModal} onHide={handleCloseReviewModal}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Add Review</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    {<Rating initialRating={5} />}
+                    <Form>
+                        <Form.Group controlId="reviewTextArea">
+                            <Form.Label>Write your review:</Form.Label>
+                            <Form.Control as="textarea" rows={3} placeholder="Enter your review here..." />
+                        </Form.Group>
+                    </Form>
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={handleCloseReviewModal}>
+                        Close
+                    </Button>
+                    <Button variant="primary" onClick={handleCloseReviewModal}>
+                        Submit Review
+                    </Button>
+                </Modal.Footer>
+            </Modal>
         </Container>
     );
+}
+
+function getStatusLabelStyle(status) {
+    switch (status) {
+        case 'Shipped':
+            return styles.statusShipped;
+        case 'In Realization':
+            return styles.statusInRealization;
+        case 'Sent':
+            return styles.statusSent;
+        default:
+            return '';
+    }
 }

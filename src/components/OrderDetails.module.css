@@ -3,6 +3,13 @@
     color: #03045E;
 }
 
+.statusShipped {
+    background-color: #00A21E;
+    padding: 0.3rem 1rem;
+    border-radius: 10px;
+    color: #fff;
+}
+
 .link {
     text-decoration: none;
     color: #03045E;
@@ -29,30 +36,4 @@
     to {
         width: 100%;
     }
-}
-
-.statusShipped {
-    background-color: #00A21E;
-    padding: 0.3rem 1rem;
-    border-radius: 10px;
-    color: #fff;
-}
-
-.statusInRealization {
-    background-color: #FFD700;
-    padding: 0.3rem 1rem;
-    border-radius: 10px;
-    color: #000;
-}
-
-.statusSent {
-    background-color: #007BFF;
-    padding: 0.3rem 1rem;
-    border-radius: 10px;
-    color: #fff;
-}
-
-.linksContainer {
-    display: flex;
-    justify-content: space-between;
 }

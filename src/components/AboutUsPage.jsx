@@ -7,8 +7,8 @@ import Image from 'react-bootstrap/Image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
-import styles from './AboutUsPage.module.css'
-import Squad from '../assets/squad.webp'
+import styles from './AboutUsPage.module.css';
+import Squad from '../assets/squad.webp';
 
 export default function AboutUsPage() {
     return (

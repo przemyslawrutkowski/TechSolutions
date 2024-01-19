@@ -4,6 +4,7 @@ import Col from 'react-bootstrap/Col';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faPhone, faEnvelope, faLocationDot, faCalendar } from '@fortawesome/free-solid-svg-icons';
+import { Link } from "react-router-dom";
 
 import styles from './Footer.module.css';
 
@@ -15,16 +16,16 @@ export default function Footer() {
                     <div className={`${styles['footer-column']}`}>
                         <h4>TechSolutions</h4>
                         <p>We take pride in delighting our customers with an abundance of options, ensuring satisfaction through choice and flexibility.</p>
-                        <div className={`${styles['social-icons']}`}>
-                            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                        <div>
+                            <Link to="https://www.facebook.com">
                                 <FontAwesomeIcon icon={faFacebook} size="2x" style={{ color: "#03045E" }} />
-                            </a>
-                            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                            </Link>
+                            <Link to="https://www.twitter.com">
                                 <FontAwesomeIcon icon={faTwitter} size="2x" style={{ color: "#03045E" }} />
-                            </a>
-                            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                            </Link>
+                            <Link to="https://www.instagram.com">
                                 <FontAwesomeIcon icon={faInstagram} size="2x" style={{ color: "#03045E" }} />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </Col>
@@ -32,11 +33,9 @@ export default function Footer() {
                     <div className={`${styles['footer-column']}`}>
                         <h4>Information</h4>
                         <ul>
-                            <li><a href="/about">About</a></li>
-                            <li><a href="/career">Career</a></li>
-                            <li><a href="/faq">FAQ</a></li>
-                            <li><a href="/blog">Blog</a></li>
-                            <li><a href="/contact-form">Contact Form</a></li>
+                            <li><Link>Career</Link></li>
+                            <li><Link>FAQ</Link></li>
+                            <li><Link>Blog</Link></li>
                         </ul>
                     </div>
                 </Col>

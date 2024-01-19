@@ -60,25 +60,25 @@ const opinionsData = [
 export default function Opinions() {
     return (
         <Container className="overflow-hidden">
-            <Row>
+            <Row className="g-3">
                 <Col xs={12}>
                     <h3 className={styles.sectionHeader}>My Opinions({opinionsData.length})</h3>
                 </Col>
+                {opinionsData.map(opinion => (
+                    <Col xs={12} key={opinion.id}>
+                        <Card>
+                            <Card.Body>
+                                <p><b>Service Information:</b><br />{opinion.serviceInfo}</p>
+                                <p><b>Date:</b> {opinion.date}</p>
+                                <p><b>Rating:</b> {Array.from({ length: opinion.rating }, (_, index) => (
+                                    <FontAwesomeIcon key={index} icon={faStar} style={{ color: '#ffc107' }} />
+                                ))}</p>
+                                <p><b>Review:</b><br />{opinion.review}</p>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                ))}
             </Row>
-            {opinionsData.map(opinion => (
-                <Col xs={12} key={opinion.id}>
-                    <Card>
-                        <Card.Body>
-                            <p><b>Service Information:</b><br />{opinion.serviceInfo}</p>
-                            <p><b>Date:</b> {opinion.date}</p>
-                            <p><b>Rating:</b> {Array.from({ length: opinion.rating }, (_, index) => (
-                                <FontAwesomeIcon key={index} icon={faStar} style={{ color: '#ffc107' }} />
-                            ))}</p>
-                            <p><b>Review:</b><br />{opinion.review}</p>
-                        </Card.Body>
-                    </Card>
-                </Col>
-            ))}
         </Container>
     );
 }
