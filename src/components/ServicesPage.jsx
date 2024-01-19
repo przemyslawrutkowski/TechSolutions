@@ -15,13 +15,13 @@ import styles from './ServicesPage.module.css'
 export default function ServicesPage() {
     return (
         <>
-            <Container fluid className="mt-5 mb-5 d-flex flex-column justify-content-center align-items-center overflow-hidden">
+            <Container fluid className="mt-5 mb-5 overflow-hidden">
                 <Row>
-                    <Col className="text-center">
+                    <Col className="d-flex justify-content-center align-items-center">
                         <h2 className={`${styles['section-header']}`}>Most Popular Services</h2>
                     </Col>
                 </Row>
-                <Row className="gx-5">
+                <Row>
                     <Col xl={{ span: 4, order: 0 }} xs={{ span: 12, order: 0 }} className="d-flex flex-column justify-content-center align-items-center">
                         <div className={`${styles['custom-card']}`}>
                             <div className={`${styles['custom-card-header']}`}>

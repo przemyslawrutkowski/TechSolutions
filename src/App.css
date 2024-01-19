@@ -3,3 +3,9 @@
     flex-direction: column;
     min-height: 100vh;
 }
+
+.content-container {
+    max-width: 85vw;
+    margin: 0 auto;
+    flex-grow: 1;
+}

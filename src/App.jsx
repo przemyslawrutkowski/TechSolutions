@@ -13,13 +13,15 @@ function App() {
   return (
     <div className="app-container">
       <CustomNavbar />
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/register" element={<RegistrationPage />} />
-        <Route path="/dashboard/*" element={<DashboardPage />} />
-      </Routes>
+      <div className="content-container">
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/register" element={<RegistrationPage />} />
+          <Route path="/dashboard/*" element={<DashboardPage />} />
+        </Routes>
+      </div>
       <Footer />
     </div>
   );

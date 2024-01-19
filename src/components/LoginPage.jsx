@@ -11,7 +11,7 @@ import styles from './LoginPage.module.css';
 import { useNavigate, Link } from 'react-router-dom';
 
 export default function LoginPage() {
-    const { isLoggedIn, setIsLoggedIn } = useAuth();
+    const { setIsLoggedIn } = useAuth();
 
     const navigate = useNavigate();
 
@@ -22,9 +22,9 @@ export default function LoginPage() {
     };
 
     return (
-        <Container fluid className="mt-5 mb-5 d-flex justify-content-center align-items-center flex-grow-1 flex-shrink-1 overflow-hidden">
+        <Container fluid className="mt-5 mb-5 overflow-hidden">
             <Row>
-                <Col>
+                <Col className="d-flex flex-column justify-content-center align-items-center">
                     <h2 className={`${styles['section-header']} text-center`}>
                         Sign In
                     </h2>

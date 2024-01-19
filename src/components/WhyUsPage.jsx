@@ -11,14 +11,14 @@ import styles from './WhyUsPage.module.css';
 
 export default function WhyUsPage() {
     return (
-        <Container fluid className="mt-5 mb-5 d-flex flex-column justify-content-center align-items-center overflow-hidden">
+        <Container fluid className="mt-5 mb-5 overflow-hidden">
             <Row>
-                <Col className="text-center">
+                <Col className="d-flex flex-column justify-content-center align-items-center text-center">
                     <h2 className={`${styles['section-header']}`}>Our Features</h2>
                     <p className={`${styles['section-desc']}`}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eum quaerat praesentium voluptatum dignissimos assumenda, tempore ipsam cum ullam, ab, facere accusamus distinctio at consequuntur vitae amet? Iure, deleniti facere.</p>
                 </Col>
             </Row>
-            <Row className="gx-5">
+            <Row>
                 <Col xs={12} md={6} lg={4} className="d-flex justify-content-center align-items-center">
                     <div className={`${styles['custom-card']}`}>
                         <div className={`${styles['custom-card-header']}`}>

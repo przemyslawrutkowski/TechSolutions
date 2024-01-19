@@ -5,14 +5,13 @@ import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
 import Envelope from '../assets/envelope.webp';
 import Form from 'react-bootstrap/Form';
-import InputGroup from 'react-bootstrap/InputGroup';
 
 import styles from './ContactPage.module.css';
 
 export default function ContactPage() {
     return (
-        <Container fluid className="d-flex justify-content-center align-items-center flex-grow-1 flex-shrink-1 overflow-hidden">
-            <Row className="gx-5">
+        <Container fluid className="mt-5 mb-5 overflow-hidden">
+            <Row>
                 <Col xs={{ span: 12, order: 0 }} xl={{ span: 6, order: 0 }} className="d-flex justify-content-center align-items-center">
                     <Image src={Envelope} alt="envelope image" className={`${styles['main-img']}`} roundedCircle />
                 </Col>

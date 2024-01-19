@@ -10,8 +10,8 @@ import MainImage from '../assets/main-image.webp'
 export default function HomePage() {
     return (
         <>
-            <Container fluid className="mt-5 mb-5 d-flex justify-content-center align-items-center overflow-hidden">
-                <Row className={`${styles.contentContainer} gx-5`}>
+            <Container fluid className="mt-5 mb-5 overflow-hidden">
+                <Row>
                     <Col xs={{ span: 12, order: 1 }} xl={{ span: 6, order: 0 }} className="d-flex flex-column justify-content-center align-items-center">
                         <div>
                             <h1 className={`${styles['introduction-text']}`}>

@@ -13,8 +13,8 @@ import Squad from '../assets/squad.webp';
 export default function AboutUsPage() {
     return (
         <>
-            <Container fluid className="mt-5 mb-5 d-flex justify-content-center align-items-center overflow-hidden">
-                <Row className="gx-5">
+            <Container fluid className="mt-5 mb-5 overflow-hidden">
+                <Row>
                     <Col xs={{ span: 12, order: 0 }} xl={{ span: 6, order: 0 }} className="d-flex justify-content-center align-items-center">
                         <Image src={Squad} alt="squad image" className={`${styles['main-img']}`} roundedCircle />
                     </Col>
@@ -38,10 +38,8 @@ export default function AboutUsPage() {
                             <p className={`${styles['section-desc']} text-start`}>
                                 <FontAwesomeIcon icon={faCheck} size="1x" style={{ color: "#03045E" }} /> test
                             </p>
-
                             <Button variant="primary" className={`${styles['custom-button']}`}>Explore More</Button>
                         </div>
-
                     </Col>
                 </Row>
             </Container>
