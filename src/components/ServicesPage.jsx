@@ -28,9 +28,9 @@ export default function ServicesPage() {
                                 <Image src={Repairing} className={`${styles['custom-image']}`} rounded />
                             </div>
                             <div className={`${styles['custom-card-body']}`}>
-                                <h5 className={`${styles['custom-card-title']}`}>Fast Service</h5>
+                                <h5 className={`${styles['custom-card-title']}`}>Hardware Repair and Maintenance</h5>
                                 <p className={`${styles['custom-card-text']}`}>
-                                    We guarantee swift solutions, ensuring you can get back to using your technology asap.
+                                    Diagnosing and repairing hardware issues.
                                 </p>
                             </div>
                         </div>
@@ -39,9 +39,9 @@ export default function ServicesPage() {
                                 <Image src={Recovery} className={`${styles['custom-image']}`} rounded />
                             </div>
                             <div className={`${styles['custom-card-body']}`}>
-                                <h5 className={`${styles['custom-card-title']}`}>Warranty</h5>
+                                <h5 className={`${styles['custom-card-title']}`}>Operating System Optimization</h5>
                                 <p className={`${styles['custom-card-text']}`}>
-                                    Your confidence in our services is crucial. That's why each repair comes with our 1 year warranty.
+                                    Optimizing operating system settings for better performance.
                                 </p>
                             </div>
                         </div>
@@ -52,9 +52,9 @@ export default function ServicesPage() {
                                 <Image src={Optimalization} className={`${styles['custom-image']}`} rounded />
                             </div>
                             <div className={`${styles['custom-card-body']}`}>
-                                <h5 className={`${styles['custom-card-title']}`}>Warranty</h5>
+                                <h5 className={`${styles['custom-card-title']}`}>Malware and Virus Removal</h5>
                                 <p className={`${styles['custom-card-text']}`}>
-                                    Your confidence in our services is crucial. That's why each repair comes with our 1 year warranty.
+                                    Scanning and removing malicious software.
                                 </p>
                             </div>
                         </div>
@@ -63,9 +63,9 @@ export default function ServicesPage() {
                                 <Image src={Updates} className={`${styles['custom-image']}`} rounded />
                             </div>
                             <div className={`${styles['custom-card-body']}`}>
-                                <h5 className={`${styles['custom-card-title']}`}>Fast Service</h5>
+                                <h5 className={`${styles['custom-card-title']}`}>Data Recovery</h5>
                                 <p className={`${styles['custom-card-text']}`}>
-                                    We guarantee swift solutions, ensuring you can get back to using your technology asap.
+                                    Retrieving lost data after hardware failure or accidental deletion.
                                 </p>
                             </div>
                         </div>
@@ -76,9 +76,9 @@ export default function ServicesPage() {
                                 <Image src={Malwares} className={`${styles['custom-image']}`} rounded />
                             </div>
                             <div className={`${styles['custom-card-body']}`}>
-                                <h5 className={`${styles['custom-card-title']}`}>Fast Service</h5>
+                                <h5 className={`${styles['custom-card-title']}`}>Hardware and Software Updates</h5>
                                 <p className={`${styles['custom-card-text']}`}>
-                                    We guarantee swift solutions, ensuring you can get back to using your technology asap.
+                                    Installing the latest updates for the operating system.
                                 </p>
                             </div>
                         </div>
@@ -87,9 +87,9 @@ export default function ServicesPage() {
                                 <Image src={Consultation} className={`${styles['custom-image']}`} rounded />
                             </div>
                             <div className={`${styles['custom-card-body']}`}>
-                                <h5 className={`${styles['custom-card-title']}`}>Fast Service</h5>
+                                <h5 className={`${styles['custom-card-title']}`}>Technical Support and Consultation</h5>
                                 <p className={`${styles['custom-card-text']}`}>
-                                    We guarantee swift solutions, ensuring you can get back to using your technology asap.
+                                    Telephone and remote technical support for clients.
                                 </p>
                             </div>
                         </div>

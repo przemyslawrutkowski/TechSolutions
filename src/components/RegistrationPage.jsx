@@ -3,10 +3,13 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { useNavigate, Link } from 'react-router-dom';
 
 import styles from './RegistrationPage.module.css';
 
 export default function RegistrationPage() {
+    const navigate = useNavigate();
+
     return (
         <Container fluid className="mt-5 mb-5 d-flex justify-content-center align-items-center flex-grow-1 flex-shrink-1 overflow-hidden">
             <Row>
@@ -36,13 +39,13 @@ export default function RegistrationPage() {
                         </Form.Group>
 
                         <div className="d-flex justify-content-center align-items-center mb-3">
-                            <Button variant="primary" type="submit" className={`${styles['custom-button']}`}>
+                            <Button variant="primary" className={`${styles['custom-button']}`}>
                                 Sign Up
                             </Button>
                         </div>
 
                         <p className={styles['login-text']}>
-                            Already have an account? <a href="#" className={styles['login-link']}>Sign In</a>
+                            Already have an account? <Link to="/login" className={styles['login-link']}>Sign In</Link>
                         </p>
                     </Form>
                 </Col>

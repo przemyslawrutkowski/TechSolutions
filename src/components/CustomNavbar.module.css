@@ -73,6 +73,7 @@
 
     .navList.showMenu {
         display: flex;
+        padding: 0;
     }
 
     .navList.showMenu li:last-child {

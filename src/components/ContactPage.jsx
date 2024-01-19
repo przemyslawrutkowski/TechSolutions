@@ -43,7 +43,7 @@ export default function ContactPage() {
                         </Form.Group>
 
                         <div className="d-flex justify-content-center align-items-center mb-3">
-                            <Button variant="primary" type="submit" className={`${styles['custom-button']}`}>
+                            <Button variant="primary" className={`${styles['custom-button']}`}>
                                 Send Message
                             </Button>
                         </div>

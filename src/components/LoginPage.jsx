@@ -8,7 +8,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
 import styles from './LoginPage.module.css';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 export default function LoginPage() {
     const { isLoggedIn, setIsLoggedIn } = useAuth();
@@ -45,18 +45,18 @@ export default function LoginPage() {
                                     <Form.Check type="checkbox" label="Remember me" />
                                 </Col>
                                 <Col xs={12} sm={6} className="d-flex flex-row justify-content-center">
-                                    <a href="#" className={`${styles['checkbox-link']}`}>Forgot Password?</a>
+                                    <Link className={`${styles['checkbox-link']}`}>Forgot Password?</Link>
                                 </Col>
                             </Row>
                         </Form.Group>
 
                         <div className="d-flex justify-content-center align-items-center mb-3">
-                            <Button variant="primary" type="submit" className={`${styles['custom-button']}`} onClick={handleSignIn}>
+                            <Button variant="primary" className={`${styles['custom-button']}`} onClick={handleSignIn}>
                                 Sign In
                             </Button>
                         </div>
                         <p className={styles['register-text']}>
-                            Not a member? <a href="#" className={styles['register-link']}>Register</a>
+                            Not a member? <Link to="/register" className={styles['register-link']}>Register</Link>
                         </p>
                     </Form>
                 </Col>

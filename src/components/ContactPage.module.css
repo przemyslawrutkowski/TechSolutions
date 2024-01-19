@@ -9,8 +9,9 @@
 }
 
 .main-img {
-    height: 400px;
-    width: 400px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
 }
 
 @media (min-width: 0px) {

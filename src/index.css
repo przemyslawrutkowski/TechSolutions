@@ -19,3 +19,7 @@ button.btn-custom {
     --bs-btn-disabled-bg: #03045E;
     --bs-btn-disabled-border-color: #03045E;
 }
+
+.contentContainer {
+    width: 85vw;
+}
