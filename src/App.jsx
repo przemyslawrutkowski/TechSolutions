@@ -6,6 +6,7 @@ import LandingPage from './components/LandingPage';
 import ContactPage from './components/ContactPage';
 import LoginPage from './components/LoginPage';
 import RegistrationPage from './components/RegistrationPage';
+import ForgotPasswordPage from './components/ForgotPasswordPage';
 import Footer from './components/Footer';
 import DashboardPage from './components/DashboardPage';
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegistrationPage />} />
+          <Route path="/forgot-password" element={<ForgotPasswordPage />} />
           <Route path="/dashboard/*" element={<DashboardPage />} />
         </Routes>
       </div>

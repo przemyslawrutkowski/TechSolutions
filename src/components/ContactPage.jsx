@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
-import Envelope from '../assets/envelope.webp';
+import Envelope from '../assets/envelope.png';
 import Form from 'react-bootstrap/Form';
 
 import styles from './ContactPage.module.css';
@@ -16,22 +16,22 @@ export default function ContactPage() {
                     <Image src={Envelope} alt="envelope image" className={`${styles['main-img']}`} roundedCircle />
                 </Col>
                 <Col xs={{ span: 12, order: 1 }} xl={{ span: 6, order: 1 }} className="d-flex flex-column justify-content-center align-items-center">
-                    <h2 className={`${styles['section-header']} text-start}`}>
+                    <h2 className={`${styles['section-header']}`}>
                         Contact Us
                     </h2>
 
                     <Form className={styles['contact-form']}>
-                        <Form.Group className={`mb-3 ${styles['form-group']}`} controlId="formBasicFirstName">
+                        <Form.Group className="mb-3" controlId="formBasicFirstName">
                             <Form.Label>First name</Form.Label>
                             <Form.Control type="text" placeholder="Enter first name" />
                         </Form.Group>
 
-                        <Form.Group className={`mb-3 ${styles['form-group']}`} controlId="formBasicLastName">
+                        <Form.Group className="mb-3" controlId="formBasicLastName">
                             <Form.Label>Last name</Form.Label>
                             <Form.Control type="text" placeholder="Enter last name" />
                         </Form.Group>
 
-                        <Form.Group className={`mb-3 ${styles['form-group']}`} controlId="formBasicEmail">
+                        <Form.Group className="mb-3" controlId="formBasicEmail">
                             <Form.Label>Email address</Form.Label>
                             <Form.Control type="email" placeholder="Enter email" />
                         </Form.Group>
