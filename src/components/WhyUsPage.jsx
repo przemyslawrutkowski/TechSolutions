@@ -15,7 +15,7 @@ export default function WhyUsPage() {
             <Row>
                 <Col className="d-flex flex-column justify-content-center align-items-center text-center">
                     <h2 className={`${styles['section-header']}`}>Our Features</h2>
-                    <p className={`${styles['section-desc']}`}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eum quaerat praesentium voluptatum dignissimos assumenda, tempore ipsam cum ullam, ab, facere accusamus distinctio at consequuntur vitae amet? Iure, deleniti facere.</p>
+                    <p className={`${styles['section-desc']}`}>Our services are distinguished by their care for your time, reliability and free diagnosis. Below you will find the characteristics that describe us.</p>
                 </Col>
             </Row>
             <Row>
