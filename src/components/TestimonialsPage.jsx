@@ -54,7 +54,7 @@ export default function TestimonialsPage() {
                         <Image src={testimonialsData[currentTestimonialIndex].image} className={`${styles['custom-image']}`} alt="Client Photo" />
                     </div>
                     <blockquote className={`${styles['custom-blockquote']}`}>
-                        <p className={`${styles['opinion']}`}>{testimonialsData[currentTestimonialIndex].text}</p>
+                        <p>{testimonialsData[currentTestimonialIndex].text}</p>
                         <footer className={`${styles['author']}`}>-{testimonialsData[currentTestimonialIndex].author}</footer>
                     </blockquote>
                     <div className={`${styles['navigation-buttons']}`}>
