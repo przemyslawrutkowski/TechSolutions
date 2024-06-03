@@ -22,6 +22,8 @@ This is a mockup project for a computer service website. It provides a visual gu
 
 * Live Chat: A live chat feature is included for real-time communication with customer service.
 
+* Whole website is fully responsive.
+
 ## Technologies
 
 * Vite: I use Vite to set up a development environment.
