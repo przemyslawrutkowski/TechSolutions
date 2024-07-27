@@ -36,7 +36,7 @@ This is a mockup project for a computer service website. It provides a visual gu
 
 ## How To Run
 
-1. Clone the repository: `https://github.com/przemyslawrutkowski/TechSolutions.git`
+1. Clone the repository: `git clone https://github.com/przemyslawrutkowski/TechSolutions.git`
 2. Navigate into the project directory: `cd TechSolutions`
 3. Install required dependencies: `npm install`
 4. Run the project: `npm run dev`
