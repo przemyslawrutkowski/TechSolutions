@@ -26,24 +26,18 @@ This is a mockup project for a computer service website. It provides a visual gu
 
 ## Technologies
 
-* Vite: I use Vite to set up a development environment.
-
-* React: I use React to build a user interface using components.
-
-* React-Router-Dom: I use React-Router-Dom to navigate between different parts of my app.
-
-* React-Bootstrap: I use React-Bootstrap to get pre-made Bootstrap components in my React app.
-
-* Bootstrap: I use Bootstrap to style my website with pre-built classes.
-
-* Font Awesome: I use Font Awesome for a collection of icons.
-
-* ESLint: I use ESLint to help me write better quality JavaScript code.
+* Vite
+* React
+* React-Router-Dom
+* React-Bootstrap
+* Bootstrap
+* Font Awesome
+* ESLint
 
 ## How To Run
 
-1. Clone the repository: `https://github.com/Przemigiusz/TechSolutions.git`
+1. Clone the repository: `https://github.com/przemyslawrutkowski/TechSolutions.git`
 2. Navigate into the project directory: `cd TechSolutions`
-3. Install dependencies: `npm install`
+3. Install required dependencies: `npm install`
 4. Run the project: `npm run dev`
 5. Open `localhost:5173` in a browser.
