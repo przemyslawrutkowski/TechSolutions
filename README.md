@@ -40,4 +40,4 @@ This is a mockup project for a computer service website. It provides a visual gu
 2. Navigate into the project directory: `cd TechSolutions`
 3. Install required dependencies: `npm install`
 4. Run the project: `npm run dev`
-5. Open `localhost:5173` in a browser.
+5. Open `localhost:5173` in a browser
